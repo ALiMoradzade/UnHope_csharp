@@ -1,4 +1,4 @@
-﻿namespace UnHope
+namespace UnHope
 {
     partial class Form1
     {
@@ -163,7 +163,7 @@
             this.getCharacterRangeToolStripMenuItem,
             this.toolStripMenuItem1});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(259, 330);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(259, 308);
             // 
             // undoToolStripMenuItem
             // 
@@ -295,7 +295,7 @@
             this.logicalAscByLineToolStripMenuItem,
             this.logicalDescByLineToolStripMenuItem});
             this.byToolStripMenuItem.Name = "byToolStripMenuItem";
-            this.byToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.byToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
             this.byToolStripMenuItem.Text = "By Line";
             // 
             // lexicoAscByLineToolStripMenuItem
@@ -332,20 +332,20 @@
             this.lexicoAscByTextToolStripMenuItem,
             this.lexicoDescByTextToolStripMenuItem});
             this.byTextToolStripMenuItem.Name = "byTextToolStripMenuItem";
-            this.byTextToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.byTextToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
             this.byTextToolStripMenuItem.Text = "By Text";
             // 
             // lexicoAscByTextToolStripMenuItem
             // 
             this.lexicoAscByTextToolStripMenuItem.Name = "lexicoAscByTextToolStripMenuItem";
-            this.lexicoAscByTextToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.lexicoAscByTextToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.lexicoAscByTextToolStripMenuItem.Text = "Ascending";
             this.lexicoAscByTextToolStripMenuItem.Click += new System.EventHandler(this.lexicoAscByTextToolStripMenuItem_Click);
             // 
             // lexicoDescByTextToolStripMenuItem
             // 
             this.lexicoDescByTextToolStripMenuItem.Name = "lexicoDescByTextToolStripMenuItem";
-            this.lexicoDescByTextToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.lexicoDescByTextToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.lexicoDescByTextToolStripMenuItem.Text = "Descending";
             this.lexicoDescByTextToolStripMenuItem.Click += new System.EventHandler(this.lexicoDescByTextToolStripMenuItem_Click);
             // 

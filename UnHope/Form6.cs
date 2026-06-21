@@ -1,10 +1,9 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -256,9 +255,9 @@ namespace UnHope
         {
             Cursor = Cursors.WaitCursor;
 
-            var link = @"https://www.tgju.org/";
+            Uri uri = new Uri("https://www.tgju.org/");
             HtmlWeb web = new HtmlWeb();
-            var sourceHtmlCode = web.Load(link);
+            var sourceHtmlCode = web.Load(uri, "GET");
             HtmlNode tmp = default;
             try
             {
@@ -270,7 +269,7 @@ namespace UnHope
             }
             HtmlNodeCollection childNodes = tmp.ChildNodes;
             goldPrice.Text = tmp.ChildNodes.Where(x => x.NodeType == HtmlNodeType.Element && x.InnerText.Contains("طلا")).First().InnerText.Split('\n')[2];
-
+            goldPrice.Text = string.Concat(goldPrice.Text.Where(c => !char.IsWhiteSpace(c)));
             Cursor = Cursors.Default;
         }
 
